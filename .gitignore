@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/CityInfo/DesignTimeBuild/.dtbcache.v2
+/.vs
+/CityInfo.API/bin/Debug/net6.0
+/CityInfo.API/obj
