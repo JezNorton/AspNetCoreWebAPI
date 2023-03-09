@@ -788,3 +788,97 @@ VALUES (N'20230308211639_CityInfoDbInitialMigration', N'6.0.14');
 2023-03-08 21:22:21.177 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
 2023-03-08 21:22:21.177 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
 2023-03-08 21:22:21.179 +00:00 [DBG] 'CityInfoContext' disposed.
+2023-03-08 21:29:40.829 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-08 21:29:41.889 +00:00 [INF] Entity Framework Core 6.0.14 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.14' with options: None
+2023-03-08 21:29:42.085 +00:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-03-08 21:29:42.089 +00:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-03-08 21:29:42.090 +00:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-03-08 21:29:42.090 +00:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-03-08 21:29:42.103 +00:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-03-08 21:29:42.103 +00:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-03-08 21:29:42.104 +00:00 [DBG] DetectChanges starting for 'CityInfoContext'.
+2023-03-08 21:29:42.104 +00:00 [DBG] DetectChanges completed for 'CityInfoContext'.
+2023-03-08 21:29:42.237 +00:00 [DBG] 'CityInfoContext' disposed.
+2023-03-08 21:30:12.356 +00:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-03-08 21:30:13.387 +00:00 [INF] Entity Framework Core 6.0.14 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.14' with options: None
+2023-03-08 21:30:13.469 +00:00 [DBG] Migrating using database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.477 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.827 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.836 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-08 21:30:13.845 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2023-03-08 21:30:13.859 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-08 21:30:13.890 +00:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-08 21:30:13.893 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.897 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.907 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-03-08 21:30:13.907 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-03-08 21:30:13.907 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.908 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.908 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-08 21:30:13.931 +00:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-08 21:30:13.931 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.932 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.934 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.935 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.935 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-08 21:30:13.935 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-08 21:30:13.935 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-08 21:30:13.937 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-08 21:30:13.937 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.937 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.937 +00:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-03-08 21:30:13.937 +00:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-03-08 21:30:13.937 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.937 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.938 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-08 21:30:13.938 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-08 21:30:13.938 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.938 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.960 +00:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-03-08 21:30:13.960 +00:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-03-08 21:30:13.961 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.961 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.961 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-08 21:30:13.964 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-08 21:30:13.967 +00:00 [DBG] A data reader was disposed.
+2023-03-08 21:30:13.967 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.967 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:13.982 +00:00 [INF] Applying migration '20230308212942_CityInfoDbAddPointOfInterestDescription'.
+2023-03-08 21:30:14.029 +00:00 [DBG] Opening connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:14.030 +00:00 [DBG] Opened connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:14.032 +00:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-03-08 21:30:14.041 +00:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-03-08 21:30:14.042 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-08 21:30:14.042 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-08 21:30:14.043 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [PointOfInterests] ADD [Description] nvarchar(200) NULL;
+2023-03-08 21:30:14.049 +00:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [PointOfInterests] ADD [Description] nvarchar(200) NULL;
+2023-03-08 21:30:14.050 +00:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-03-08 21:30:14.050 +00:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-03-08 21:30:14.050 +00:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230308212942_CityInfoDbAddPointOfInterestDescription', N'6.0.14');
+2023-03-08 21:30:14.052 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230308212942_CityInfoDbAddPointOfInterestDescription', N'6.0.14');
+2023-03-08 21:30:14.288 +00:00 [DBG] Committing transaction.
+2023-03-08 21:30:14.292 +00:00 [DBG] Committed transaction.
+2023-03-08 21:30:14.293 +00:00 [DBG] Disposing transaction.
+2023-03-08 21:30:14.293 +00:00 [DBG] Closing connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:14.294 +00:00 [DBG] Closed connection to database 'CityInfo' on server '(localdb)\mssqllocaldb'.
+2023-03-08 21:30:14.295 +00:00 [DBG] 'CityInfoContext' disposed.
