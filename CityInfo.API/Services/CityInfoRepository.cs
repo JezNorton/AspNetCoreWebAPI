@@ -7,7 +7,7 @@ namespace CityInfo.API.Services
     public class CityInfoRepository : ICityInfoRepository
     {
         private readonly CityInfoContext _context;
-
+        const int maxCitiesPageSize = 20;
         public CityInfoRepository(CityInfoContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
@@ -16,7 +16,34 @@ namespace CityInfo.API.Services
         {
             return await _context.Cities.OrderBy(c => c.Name).ToListAsync();
         }
+        public async Task<(IEnumerable<City>, PaginationMetadata)> GetCitiesAsync(
+            string? name,
+            string? searchQuery,
+            int pageNo = 1,
+            int pageSize = 10)
+        {
+            if (pageSize > maxCitiesPageSize) pageSize = maxCitiesPageSize;
+            var collection = _context.Cities as IQueryable<City>;
+            if (!string.IsNullOrEmpty(name))
+            {
+                name = name.Trim();
+                collection = collection.Where(c => c.Name == name);
+            }
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                searchQuery = searchQuery.Trim();
+                collection = collection
+                    .Where(c => c.Name.Contains(searchQuery) || c.Description
+                    .Contains(searchQuery));
+            }
+            var totalItemCount = await collection.CountAsync();
+            var paginationMetadata = new PaginationMetadata(totalItemCount, pageSize, pageNo);
+            var collectionToReturn = await collection
+                .Skip(pageSize * (pageNo - 1))
+                    .Take(pageSize).ToListAsync();
+            return (collectionToReturn, paginationMetadata);
 
+        }
         public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest = false)
         {
             if (includePointsOfInterest)
@@ -54,6 +81,11 @@ namespace CityInfo.API.Services
         public void DeletePointOfInterest(PointOfInterest pointOfInterest)
         {
             _context.PointsOfInterest.Remove(pointOfInterest);
+        }
+
+        public async Task<bool> CityNameMatchesCityId(int cityId, string name)
+        {
+            return await _context.Cities.AnyAsync(c => c.Id == cityId && c.Name == name);
         }
     }
 }
